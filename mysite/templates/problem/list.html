@@ -1,0 +1,38 @@
+<!-- extends表明此页面继承自 base.html 文件 -->
+{% extends "base.html" %}
+{% load static %}
+
+<!-- 写入 base.html 中定义的 title -->
+{% block title %}
+首页
+{% endblock title %}
+
+<!-- 写入 base.html 中定义的 content -->
+{% block content %}
+
+<!-- 定义放置题目标题的div容器 -->
+<div class="container">
+    <div class="row mt-2">
+
+        {% for problem in problems %}
+        <!-- 题目内容 -->
+        <div class="col-4 mb-4">
+            <!-- 卡片容器 -->
+            <div class="card h-100">
+                <!-- 标题 -->
+                <h4 class="card-header">{{ problem.name }}</h4>
+                <!-- 摘要 -->
+                <div class="card-body">
+                    <p class="card-text">{{ problem.description|slice:'100' }}...</p>
+                </div>
+                <!-- 注脚 -->
+                <div class="card-footer">
+                    <a href="{% url 'problem:problem_content' problem.id %}" class="btn btn-primary">查看题目</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+</div>
+{% endblock content %}

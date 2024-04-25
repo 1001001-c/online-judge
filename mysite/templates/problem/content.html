@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+<!-- 写入 base.html 中定义的 title -->
+{% block title %}
+题目
+{% endblock title %}
+
+<!-- 写入 base.html 中定义的 content -->
+{% block content %}
+
+<!-- 题目详情 -->
+<div class="container">
+    <div class="row">
+        <h1 class="col-12 mt-4 mb-4">{{ problem.name }}</h1>
+        <div class="col-12 alert alert-success">作者：{{ problem.author }}</div>
+        <div class="col-12">
+            <p>{{ problem.description |safe}}</p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <a class="nav-link" href="{% url 'submit:code_submit' %}"> 提交代码</a>
+</div>
+{% endblock content %}

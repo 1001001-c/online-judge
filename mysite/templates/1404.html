@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found</title>
+</head>
+
+<body>
+    <h1>404 - Page Not Found</h1>
+    <p>The page you requested could not be found.</p>
+    <!-- 添加一个链接到主页 -->
+    <a href="{% url 'problem:problem_list' %}">Go to Home Page</a>
+</body>
+
+</html>

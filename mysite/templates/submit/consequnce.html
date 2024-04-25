@@ -1,0 +1,38 @@
+<!-- extends表明此页面继承自 base.html 文件 -->
+{% extends "base.html" %} {% load static %}
+<!-- 写入 base.html 中定义的 title -->
+{% block title %} 提交代码 {% endblock title %}
+<!-- 写入 base.html 中定义的 content -->
+{% block content %}
+
+
+<div class="container">
+    <div class="row">
+        <h1 class="col-12 mt-4 mb-4">提交者 {{ consequnce.submitter }}</h1>
+        <div class="col-12 alert alert-success">题目编号：{{ consequnce.problemId }}</div>
+        <div class="col-12">
+            <table>
+                <thead>
+                    <tr>
+                        <th>提交代码</th>
+                        <th>得分</th>
+                        <th>内存花费</th>
+                        <th>运行时间</th>
+                        <th>重复率</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{ consequnce.submitCode | safe }}</td>
+                        <td>{{ consequnce.userScore }}</td>
+                        <td>{{ consequnce.memoryCost }}</td>
+                        <td>{{ consequnce.runtime }}</td>
+                        <td>{{ consequnce.repeatRatio }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

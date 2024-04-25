@@ -1,0 +1,28 @@
+<!-- extends表明此页面继承自 base.html 文件 -->
+{% extends "base.html" %} {% load static %}
+<!-- 写入 base.html 中定义的 title -->
+{% block title %} 提交代码 {% endblock title %}
+<!-- 写入 base.html 中定义的 content -->
+{% block content %}
+<!-- 文章详情 -->
+
+
+<!-- 写文章表单 -->
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <!-- 提交文章的表单 -->
+            <form method="post" action=".">
+                <!-- Django中需要POST数据的地方都必须有csrf_token -->
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="submitCode">提交代码</label>
+                    <textarea type="text" class="form-control" id="submitCode" name="submitCode" rows="12"></textarea>
+                </div>
+                <!-- 提交按钮 -->
+                <button type="submit" class="btn btn-primary">完成</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock content %}
