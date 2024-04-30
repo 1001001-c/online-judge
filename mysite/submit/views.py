@@ -35,8 +35,9 @@ def code_submit(request):
                                                 'markdown.extensions.codehilite',     
                                             ])
             # 此时请重新创建用户，并传入此用户的id
-            new_submit.submitter = User.objects.get(id=1)
-            new_submit.problemId = ProblemPost.objects.get(id=1)
+            new_submit.submitter = User.objects.get(id=request.user.id)
+            print(dir(request))
+            # new_submit.problemId = ProblemPost.objects.get(request.problem.id)
             send_judgeProgram(new_submit)
             new_submit = subscribe_consequnce(new_submit)
             # 将新文章保存到数据库中

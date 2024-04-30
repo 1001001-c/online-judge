@@ -22,5 +22,7 @@ urlpatterns = [
     # 新增代码，配置app的url
     path('problem/', include('problem.urls', namespace='problem')),
     path('submit/', include('submit.urls', namespace='submit')),
+    # 用户管理
+    path('userprofile/', include('userprofile.urls', namespace='userprofile')),
 ]
 handler404 = 'problem.views.my_custom_404_view'
