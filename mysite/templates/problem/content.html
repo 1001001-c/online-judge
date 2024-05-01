@@ -18,9 +18,8 @@
             <p>{{ problem.description |safe}}</p>
         </div>
     </div>
+    <a class="nav-link" href="{% url 'problem:code_submit' problem.id %}"> 提交代码</a>
 </div>
 
-<div class="container">
-    <a class="nav-link" href="{% url 'submit:code_submit' %}"> 提交代码</a>
-</div>
+    
 {% endblock content %}

@@ -5,3 +5,7 @@ from django.contrib import admin
 from .models import ProblemPost
 
 admin.site.register(ProblemPost)
+
+from .models import SubmitPost
+
+admin.site.register(SubmitPost)

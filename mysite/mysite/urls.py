@@ -21,7 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # 新增代码，配置app的url
     path('problem/', include('problem.urls', namespace='problem')),
-    path('submit/', include('submit.urls', namespace='submit')),
     # 用户管理
     path('userprofile/', include('userprofile.urls', namespace='userprofile')),
 ]

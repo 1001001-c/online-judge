@@ -8,4 +8,6 @@ urlpatterns = [
     # 目前还没有urls
     path('problem_list/', views.problem_list, name='problem_list'),
     path('content/<int:id>/', views.problem_content, name='problem_content'),
+    path('code_submit/<int:id>/', views.code_submit, name='code_submit'),
+    path('consequnce/', views.consequnce, name='consequnce'),
 ]
