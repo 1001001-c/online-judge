@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/lizhiqian/online-judge/calculate/build",
+  "command": "/usr/bin/g++  -I/home/lizhiqian/online-judge/calculate/ProblemManager/include -I/home/lizhiqian/online-judge/calculate/ProblemMsg/include -I/home/lizhiqian/online-judge/calculate/ProblemStorage/include -I/home/lizhiqian/online-judge/calculate/ThirdParty/rapidjson/include -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles/Calculate.dir/main.cpp.o -c /home/lizhiqian/online-judge/calculate/main.cpp",
+  "file": "/home/lizhiqian/online-judge/calculate/main.cpp"
+},
+{
+  "directory": "/home/lizhiqian/online-judge/calculate/build",
+  "command": "/usr/bin/g++  -I/home/lizhiqian/online-judge/calculate/ProblemManager/include -I/home/lizhiqian/online-judge/calculate/ProblemMsg/include -I/home/lizhiqian/online-judge/calculate/ProblemStorage/include -I/home/lizhiqian/online-judge/calculate/ThirdParty/rapidjson/include -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles/Calculate.dir/ProblemManager/src/ProblemCenter.cpp.o -c /home/lizhiqian/online-judge/calculate/ProblemManager/src/ProblemCenter.cpp",
+  "file": "/home/lizhiqian/online-judge/calculate/ProblemManager/src/ProblemCenter.cpp"
+},
+{
+  "directory": "/home/lizhiqian/online-judge/calculate/build",
+  "command": "/usr/bin/g++  -I/home/lizhiqian/online-judge/calculate/ProblemManager/include -I/home/lizhiqian/online-judge/calculate/ProblemMsg/include -I/home/lizhiqian/online-judge/calculate/ProblemStorage/include -I/home/lizhiqian/online-judge/calculate/ThirdParty/rapidjson/include -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles/Calculate.dir/ProblemMsg/src/ProblemMsg.cpp.o -c /home/lizhiqian/online-judge/calculate/ProblemMsg/src/ProblemMsg.cpp",
+  "file": "/home/lizhiqian/online-judge/calculate/ProblemMsg/src/ProblemMsg.cpp"
+},
+{
+  "directory": "/home/lizhiqian/online-judge/calculate/build",
+  "command": "/usr/bin/g++  -I/home/lizhiqian/online-judge/calculate/ProblemManager/include -I/home/lizhiqian/online-judge/calculate/ProblemMsg/include -I/home/lizhiqian/online-judge/calculate/ProblemStorage/include -I/home/lizhiqian/online-judge/calculate/ThirdParty/rapidjson/include -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles/Calculate.dir/ProblemStorage/src/ProblemStorage.cpp.o -c /home/lizhiqian/online-judge/calculate/ProblemStorage/src/ProblemStorage.cpp",
+  "file": "/home/lizhiqian/online-judge/calculate/ProblemStorage/src/ProblemStorage.cpp"
+}
+]

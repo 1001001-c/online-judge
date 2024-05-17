@@ -1,0 +1,3 @@
+/home/lizhiqian/online-judge/calculate/build/CMakeFiles/Calculate.dir
+/home/lizhiqian/online-judge/calculate/build/CMakeFiles/edit_cache.dir
+/home/lizhiqian/online-judge/calculate/build/CMakeFiles/rebuild_cache.dir

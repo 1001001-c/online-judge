@@ -1,0 +1,1 @@
+/usr/bin/g++ -O3 -DNDEBUG CMakeFiles/Calculate.dir/main.cpp.o CMakeFiles/Calculate.dir/ProblemManager/src/ProblemCenter.cpp.o CMakeFiles/Calculate.dir/ProblemMsg/src/ProblemMsg.cpp.o CMakeFiles/Calculate.dir/ProblemStorage/src/ProblemStorage.cpp.o -o Calculate  -lhiredis 
